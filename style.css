@@ -1,0 +1,81 @@
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 173, 254);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: "Fragment Mono", monospace;
+  text-align: center;
+}
+.addBookBtn {
+  margin: 20px 5px;
+  width: 140px;
+  height: 60px;
+  background-color: coral;
+  border: 0;
+  border-radius: 10px;
+  font-size: large;
+  padding: 5px 10px;
+}
+.overlay {
+  background-color: rgb(0, 0, 0, 0.5);
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  position: fixed;
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+.modalChild {
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hidden {
+  display: none;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  width: 400px;
+  height: 300px;
+  background-color: rgb(249, 52, 170);
+}
+#books {
+  display: flex;
+  gap: 10px;
+  font-size: larger;
+}
+button {
+  width: 80px;
+  height: 40px;
+  border: 0;
+  font-size: medium;
+  margin-left: 10px;
+}
+.btn-light-green {
+  background-color: greenyellow;
+}
+.btn-light-red {
+  background-color: rgb(90, 197, 255);
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Fragment+Mono:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Library</title>
+  </head>
+  <body>
+    <header class="header">
+      <h2>Library</h2>
+    </header>
+    <main>
+      <button class="addBookBtn">+ Add Book</button>
+      <div>
+        <div class="modal active"> <div class="overlay hidden"></div><div class=" modalChild hidden">
+          <button class="btnClose">close</button>
+          <div><h3>New Book</h3></div>
+          <div><input id="title" placeholder="Title" type="text" /></div>
+          <div><input id="author" placeholder="Author" type="text" /></div>
+          <div><input id="pages" placeholder="Pages" type="text" /></div>
+          <div>
+            <input type="checkbox" name="read" id="read"> Have you read it?</input>
+          </div>
+          <div><button id="addBook" type="submit">Submit</button></div>
+        </div></div>
+        <div id="books"></div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
